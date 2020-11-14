@@ -1,6 +1,7 @@
 @import url("https://rsms.me/inter/inter.css");
 
 :root {
+  font-size: 15px;
   --color-coralblack: #1b1b1b;
   --color-pho: #fafafa;
   --color-coralorange: #ffb800;
@@ -10,27 +11,59 @@
 
 body {
   background-color: var(--color-coralred);
-  position: relative;
-  margin: auto;
-  padding: 0;
-  width: 60%;
+  // margin: auto;
+  // padding: 0;
+  width: 80%;
+  margin: 0 auto;
   font-family: "Inter", sans-serif;
   text-align: center;
 }
 
 nav {
-  background-color: var(--color-coralred);
-  padding-top: 2rem;
-  position: sticky;
-  top: 0;
+  position: relative;
+  top: 3rem;
+  // width: 80%;
+  // margin: 0 auto;
+  display: flex;
+  flex-direction: reverse;
+  justify-content: flex-end;
 }
 
-nav a {
+.main-content {
+  position: relative;
+  top: 2rem;
+  width: 100%;
+  margin: auto;
+}
+
+.main-title {
+  position: absolute;
+  margin: 0 auto 0 auto;
+  transform: translate(0%, 50%);
+}
+
+.hero-text {
+  font-size: 6rem;
+  top: 50%;
+  transform: translate(0, -50%)
+}
+
+.navbar-link {
   text-decoration: none;
   color: var(--color-coralblack);
+  margin: 0 1.25rem 0 1.25rem;
+  text-align: center;
+  font-weight: 500;
 }
 
 .footer {
-  position: relative;
-  // bottom: 50px;
+  bottom: 1.5rem;
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin: 0, 0, 0, 0;
+}
+
+.footer p {
+  font-size: 0.8rem;
 }
