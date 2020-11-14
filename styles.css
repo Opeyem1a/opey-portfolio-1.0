@@ -1,0 +1,36 @@
+@import url("https://rsms.me/inter/inter.css");
+:root {
+  --color-coralblack: #1b1b1b;
+  --color-pho: #fafafa;
+  --color-coralorange: #ffb800;
+  --color-coralred: #ff5252;
+  --color-coralblue: #6ab8ff;
+}
+
+body {
+  background-color: var(--color-coralred);
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 60%;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--color-coralred);
+  padding-top: 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-coralblack);
+}
+
+.footer {
+  position: relative;
+}
+/*# sourceMappingURL=styles.css.map */
