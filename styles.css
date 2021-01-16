@@ -2,6 +2,7 @@
 :root {
   font-size: calc(12px + 0.5vw);
   font-weight: 400;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -9,7 +10,6 @@ body {
   color: #1b1b1b;
   width: 80%;
   margin: 0 auto;
-  font-family: "Inter", sans-serif;
 }
 
 nav {
@@ -33,6 +33,14 @@ nav .navbar-link {
   padding: 0 1.5rem 0 0;
   text-align: left;
   font-weight: 500;
+  -webkit-transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+nav .navbar-link:hover {
+  color: #ff5252;
+  letter-spacing: 0.05rem;
+  text-decoration: underline;
 }
 
 .main-page {
@@ -60,16 +68,39 @@ nav .navbar-link {
 .main-page .main-content .main-text {
   font-size: 4rem;
   font-weight: 600;
-  margin: calc(6vh) 0 0 0;
+  margin: calc(10vh) 0 0 0;
 }
 
 .main-page .main-content .sub-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
+  margin-top: 1rem;
+}
+
+.text-keep-scrolling {
+  position: relative;
+  top: 3rem;
+  color: rgba(27, 27, 27, 0.5);
+  -webkit-transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.text-keep-scrolling:hover {
+  color: #ff5252;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
 }
 
 .text-underline {
   text-decoration: underline;
+  -webkit-transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.text-underline:hover {
+  color: #ff5252;
+  letter-spacing: 0.15rem;
+  cursor: default;
 }
 
 footer {
@@ -82,6 +113,13 @@ footer {
 footer p {
   text-align: center;
   font-size: 0.6rem;
-  color: rgba(27, 27, 27, 0.5);
+  color: rgba(27, 27, 27, 0.2);
+  -webkit-transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+footer p:hover {
+  color: #1b1b1b;
+  cursor: default;
 }
 /*# sourceMappingURL=styles.css.map */
