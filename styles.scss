@@ -39,7 +39,6 @@ nav {
     color: $color-coralblack;
     padding: 0 1.5rem 0 0;
     text-align: left;
-    font-weight: 500;
 
     @include transition(all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95));
     &:hover {
